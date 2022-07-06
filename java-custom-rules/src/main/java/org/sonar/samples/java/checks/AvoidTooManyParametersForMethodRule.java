@@ -12,7 +12,7 @@ import com.google.common.collect.ImmutableList;
 import org.sonar.plugins.java.api.tree.Tree;
 import org.sonar.plugins.java.api.tree.MethodTree;
 
-@Rule(key =  "AvoidTooManyParametersForMethod",description = "Method should not have more than 5 input parameters", 
+@Rule(key =  "AvoidTooManyParametersForMethod",description = "Method should not have more than five input parameters", 
 priority = Priority.MINOR, tags = {"bug"})
 public class AvoidTooManyParametersForMethodRule 
 	extends IssuableSubscriptionVisitor{
