@@ -47,6 +47,7 @@ public class AvoidSuperClassRule
     if (SUPER_CLASS_AVOID.contains(superClassName)) {
       reportIssue(tree, String.format("The usage of super class %s is forbidden", superClassName));
     }
+    
   }
 
 }
