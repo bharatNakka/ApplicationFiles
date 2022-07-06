@@ -47,7 +47,10 @@ public class AvoidSuperClassRule
     String superClassName = treeClazz.superClass().symbolType().fullyQualifiedName();
 
     // Check if superClass avoid
+    //Codescene change
+    
     if (SUPER_CLASS_AVOID.contains(superClassName)) {
+    
       reportIssue(tree, String.format("The usage of super class %s is forbidden", superClassName));
     }
     
