@@ -15,17 +15,20 @@ import org.sonar.plugins.java.api.tree.ClassTree;
 import org.sonar.plugins.java.api.tree.Tree;
 
 /**
- * Only to bring out the unit test requirement about classpath when bytecode methods used (see rule unit test class)
+ * Only to bring out the unit test requirement 
+ about classpath when bytecode methods used (see rule unit test class)
  */
 @Rule(key = "AvoidSuperClass")
 public class AvoidSuperClassRule 
   extends IssuableSubscriptionVisitor 
   {
 
-  public static final List<String> SUPER_CLASS_AVOID = Collections.singletonList("org.slf4j.Logger");
+  public static final List<String> SUPER_CLASS_AVOID =
+  Collections.singletonList("org.slf4j.Logger");
 
   @Override
-  public List<Tree.Kind> nodesToVisit() {
+  public List<Tree.Kind> nodesToVisit()
+  {
     // Register to the kind of nodes you want to be called upon visit.
     return Collections.singletonList(Tree.Kind.CLASS);
   }
